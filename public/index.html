@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Grupal SSE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>💬 Chat Grupal</h1>
+    </header>
+
+    <section class="user-setup">
+      <h2>Configuración de usuario</h2>
+
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" placeholder="Escribe tu nombre..." />
+
+      <label for="color">Color del fondo:</label>
+      <input type="color" id="color" value="#4a90e2" />
+
+      <label>Elige tu avatar:</label>
+      <div class="avatar-selection">
+        <!--https://www.dicebear.com/playground/-->
+        <label>
+          <input type="radio" name="avatar" value="1" checked>
+          <img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Sawyer" alt="Avatar 1">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="2">
+          <img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Mackenzie" alt="Avatar 2">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="3">
+          <img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Liliana" alt="Avatar 3">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="4">
+          <img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Alex" alt="Avatar 4">
+        </label>
+      </div>
+      <button id="startChat">Entrar al chat</button>
+    </section>
+
+    <section class="chat-room hidden">
+      <div class="messages" id="messages"></div>
+
+      <form id="messageForm" class="message-form">
+        <input type="text" id="messageInput" placeholder="Escribe un mensaje..." autocomplete="off" />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
