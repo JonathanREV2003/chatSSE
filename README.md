@@ -1,5 +1,5 @@
 ### Levantar el proyecto
-1. Entran a la carpeta del proyecto
+1. Entran a la carpeta del proyecto = en la terminal >>>>> cd chatsse
    
 <img width="735" height="218" alt="image" src="https://github.com/user-attachments/assets/0ea72e7b-0b6b-491e-9227-1d27524267ff" />
 
